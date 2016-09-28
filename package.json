@@ -1,0 +1,35 @@
+{
+  "name": "osm-dominance-tagger",
+  "version": "1.0.0",
+  "description": "For each Openstreetmap peak, calculate it's dominance using grass GIS with SRTM DEM data",
+  "main": "index.js",
+  "dependencies": {
+    "geojson": "^0.4.0",
+    "jsonfile": "^2.4.0",
+    "query-overpass": "^1.1.0",
+    "slug": "^0.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k127/osm-peak-dominance.git"
+  },
+  "keywords": [
+    "osm",
+    "openstreetmap",
+    "srtm",
+    "grass",
+    "gis",
+    "dominance",
+    "mountain-cartography"
+  ],
+  "author": "Klaus Hartl <k127@gmx.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/k127/osm-peak-dominance/issues"
+  },
+  "homepage": "https://github.com/k127/osm-peak-dominance#readme"
+}
