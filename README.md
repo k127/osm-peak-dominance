@@ -37,6 +37,12 @@ A peak of a higher dominance takes label rendering precedence over a less domina
 * [Topographicprominence](https://en.wikipedia.org/wiki/Topographic_prominence) / [de](https://de.wikipedia.org/wiki/Schartenh%C3%B6he)
 
 
+## Data Sources
+
+* OpenStreetMap
+* SRTM digital elevation model: <http://dds.cr.usgs.gov/srtm/version2_1/SRTM3/>
+
+
 ## Credits
 
 * Image by [Gretarsson](https://commons.wikimedia.org/wiki/User:Gretarsson),
