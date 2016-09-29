@@ -7,7 +7,9 @@
     "geojson": "^0.4.0",
     "jsonfile": "^2.4.0",
     "query-overpass": "^1.1.0",
-    "slug": "^0.9.1"
+    "request": "^2.75.0",
+    "slug": "^0.9.1",
+    "sprintf-js": "^1.0.3"
   },
   "devDependencies": {},
   "scripts": {
