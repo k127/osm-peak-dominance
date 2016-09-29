@@ -14,7 +14,7 @@ const exec     = require('child_process').exec;
 
 var state = {
   bbox:  {n: 47.1, w: 11, s: 47, e: 11.1},
-  cfg:   {verbose: 2, saveGeoJSON: true, hgtDir: __dirname + '/grassdb/here/PERMANENT'},
+  cfg:   {verbose: 2, saveGeoJSON: true, hgtDir: __dirname + '/geodata'},
   peaks: {raw: {}, withEle: [], withoutEle: []},
   downloadLock: false,
 };
@@ -75,6 +75,7 @@ var getSRTMTiles = function(state) {
       state.downloadLock = true;
       var url = util.format(urlFmt, continent, filename);
       if (state.cfg.verbose > 1) console.log(util.format('Downloading SRTM tile %s ...', filename));
+      // TODO maybe just use wget here
       request(url, function (err, resp, body) {
         state.downloadLock = false;
         if (state.cfg.verbose > 1) console.log(util.format('   done with %s.', filename));
@@ -98,7 +99,7 @@ var callGrassWithScript = function() {
   console.error('TODO: callGrassWithScript()');  // TODO
   // see: http://stackoverflow.com/a/20643568/211514
   // TODO provide actual script
-  var grassCmd = 'docker run -it --rm -v $(pwd):/data geodata/grass -c /data/grassdb/here/PERMANENT';
+  var grassCmd = 'docker run -it --rm -v $(pwd):/data k127/grass -c /data/grassdb/here/PERMANENT';
   exec(grassCmd, function(err, stdout, stderr) {
     // command output is in stdout
   });

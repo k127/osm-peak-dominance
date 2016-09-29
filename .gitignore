@@ -36,4 +36,6 @@ jspm_packages
 # Optional REPL history
 .node_repl_history
 out*.json
-grassdb/here/PERMANENT/*.hgt.zip
+geodata/*.hgt.zip
+geodata/*.hgt
+geodata/srtm_mosaik.tif
