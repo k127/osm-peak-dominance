@@ -12,6 +12,11 @@ For each Openstreetmap peak, calculate its dominance using grass GIS with SRTM D
     * add tag to OSM node **TODO: propose scheme**
 
 
+## Set Up
+
+* `npm install && npm start`
+
+
 ## Goal
 <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/DominanzSchartenhoeheNew.png"
      align="right" width="50%"
