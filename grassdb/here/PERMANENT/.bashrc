@@ -1,5 +1,5 @@
 test -r ~/.alias && . ~/.alias
-PS1='GRASS 7.1.svn (here):\w > '
+PS1='GRASS 7.3.svn (here):\w > '
 grass_prompt() {
 	LOCATION="`g.gisenv get=GISDBASE,LOCATION_NAME,MAPSET separator='/'`"
 	if test -d "$LOCATION/grid3/G3D_MASK" && test -f "$LOCATION/cell/MASK" ; then
@@ -11,5 +11,5 @@ grass_prompt() {
 	fi
 }
 PROMPT_COMMAND=grass_prompt
-export PATH="/usr/local/grass-7.1.svn/bin:/usr/local/grass-7.1.svn/scripts:/root/.grass7/addons/bin:/root/.grass7/addons/scripts:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+export PATH="/usr/local/grass-7.3.svn/bin:/usr/local/grass-7.3.svn/scripts:/root/.grass7/addons/bin:/root/.grass7/addons/scripts:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 export HOME="/root"

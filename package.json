@@ -4,12 +4,13 @@
   "description": "For each Openstreetmap peak, calculate it's dominance using grass GIS with SRTM DEM data",
   "main": "index.js",
   "dependencies": {
-    "geojson": "^0.4.0",
+    "cli-progress": "^1.2.0",
     "jsonfile": "^2.4.0",
     "query-overpass": "^1.1.0",
-    "request": "^2.75.0",
     "slug": "^0.9.1",
-    "sprintf-js": "^1.0.3"
+    "sprintf-js": "^1.0.3",
+    "unzip": "^0.1.11",
+    "wget-improved": "^1.3.0"
   },
   "devDependencies": {},
   "scripts": {
