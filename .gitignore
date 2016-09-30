@@ -39,3 +39,4 @@ out*.json
 geodata/*.hgt.zip
 geodata/*.hgt
 geodata/srtm_mosaik.tif
+grassdb/here/PERMANENT/.bash_history
